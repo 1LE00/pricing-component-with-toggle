@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width:320px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:hsl(240, 78%, 98%);
+        background-image: url(images/bg-top.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 168px -25px;
+    }
+    
+    .container .top, .container .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 20px; 
+        width: 100%;
+    }
+    
+    .container .top .main-heading h1{
+        font-size: 8vw;
+        font-weight: 700;
+        color:  hsla(234, 13%, 49%, 0.849);
+        margin-bottom: 40px;
+    }
+    
+    .container .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container .options span{
+        font-size: 4vw;
+        font-weight: 700;
+        color:  hsl(234, 14%, 74%);
+        padding: 0 20px;
+    }
+    
+    input[type="checkbox"]{
+        position: relative;
+        width: 53px;
+        height: 31px;
+        -webkit-appearance: none;
+        border-radius: 90px;
+        background: linear-gradient(to right,  hsl(236, 72%, 79%) , hsl(237, 63%, 64%)
+        );
+        box-shadow: inset 0 0 5px hsl(237, 63%, 64%, 0.5), 0 0 5px hsl(237, 63%, 64%, 0.5);
+    }
+    
+    input[type="checkbox"]:before{
+        content: '';
+        position: absolute;
+        top: 4.5px;
+        left: 5px;
+        bottom: 2px;
+        width: 24px;
+        height: 23px;
+        background-color: hsl(240, 78%, 98%);
+        border-radius: 50%;
+        transition: 0.5s;
+        box-shadow: 0 0 5px rgb(235, 232, 232,0.5), 0 0 0 2px rgba(255,255, 255, 0.1);
+    }
+    
+    input:checked[type="checkbox"]:before{
+        left: 24px;
+    }
+    
+    .container .bottom{
+        padding: 0 20px 70px;
+    }
+    
+    .container .bottom > div{
+        background-color:hsl(0, 0%, 100%);
+        border-radius: 8px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        color:  hsl(233, 13%, 49%);
+    }
+    
+    .container .bottom > div:nth-child(2){
+        background: linear-gradient(to right,  hsl(236, 72%, 79%) , hsl(237, 63%, 64%)
+        );
+        color: hsl(240, 78%, 98%);
+    }
+    
+    .container .bottom > div .title{
+        font-size: 3.5vw;
+        padding: 30px 0 20px;
+        font-weight: 600;
+    }
+    
+    .container .bottom > div:nth-child(2) .title, .container .bottom > div:nth-child(2) .value{
+        color: hsl(240, 78%, 98%);
+    }
+    
+    .container .bottom > div .value{
+        font-size: 9.5vw;
+        color:  hsl(232, 13%, 33%);
+        margin-bottom: 15px;
+    }
+    
+    .container .bottom > div .value h1 span{
+        font-size: 9vw;
+        position: relative;
+        top: -10px;
+        left: -5px;
+    }
+    
+    .container .bottom > div .list ul li{
+        list-style: none;
+        font-size: 3.5vw;
+        font-weight: 700;
+        padding: 15px 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .container .bottom > div .list ul li:not(:nth-child(2)){
+        border-bottom: 1px solid hsl(234, 14%, 74%, 0.2);
+        border-top: 1px solid hsl(234, 14%, 74%, 0.2);
+    }
+    
+    .container .bottom > div:nth-child(2) .list ul li:not(:nth-child(2)){
+        border-bottom: 1px solid hsl(240, 78%, 98%,0.2);
+        border-top: 1px solid hsl(240, 78%, 98%,0.2);
+    }
+    
+    .container .bottom > div .btn{
+        margin: 32px auto;
+        width: 80%;
+    }
+    
+    .container .bottom > div .btn button{
+        padding: 14px;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 3vw;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(90deg, hsl(236, 47%, 79%), hsl(237, 63%, 64%) 
+        );
+        color: hsl(240, 78%, 98%);
+    }
+    
+    .container .bottom > div:nth-child(2) .btn button{
+        background: hsl(0, 0%, 100%);
+        color: hsl(237, 63%, 64%);
+    }
+    
+}
+
+@media only screen and (min-width:360px) {
+    
+    .container{
+        background-position: 188px -35px;
+    }
+}
+
+@media only screen and (min-width:375px) {
+    
+    .container{
+        background-position: 195px -35px;
+    }
+}
+
+@media only screen and (min-width:411px) {
+    
+    .container{
+        background-position: 210px -45px;
+    }
+}
+
+@media only screen and (min-width:411px) {
+    
+    .container .bottom > div{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media only screen and (min-width:540px) {
+    
+    .container{
+        background-position: 280px -50px;
+    }
+
+    .container .top{
+        padding: 100px 50px;
+    }   
+
+    .container .bottom{
+      padding: 0 50px 70px;
+    }
+
+    .container .bottom > div .list ul li{
+        padding: 20px 0;
+    }
+
+    .container .bottom > div .btn{
+        margin: 40px auto;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    
+    .container{
+        background-position: 350px -70px;
+    }
+
+    .container .top{
+        padding: 150px 50px;
+    }   
+
+    .container .bottom > div .list ul li{
+        padding: 25px 0;
+    }
+
+    .container .bottom > div .btn{
+        margin: 50px auto;
+    }
+
+    .container .bottom > div .btn button{
+        padding: 18px 0;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .container{
+        background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 33%, 30%;
+        background-position: 820px 0px, 0 550px;
+    }
+
+    .container .top{
+        padding: 80px 50px;
+    }   
+
+    .container .top .main-heading h1{
+        font-size: 3vw;
+    }
+
+    .container .options span{
+        font-size: 1.3vw;
+        padding: 0 30px;
+    }
+
+    input[type="checkbox"]{
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:hover{
+        opacity: 0.7;
+    }
+
+    .container .bottom{
+        flex-direction: row;
+        padding: 0 50px 100px;
+    }
+
+    .container .bottom > div{
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .container .bottom > div:nth-child(1){
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    .container .bottom > div:nth-child(2){
+        border-radius: 8px;
+        padding: 20px 0;
+    }
+
+    .container .bottom > div:nth-child(3){
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .container .bottom > div .title{
+        font-size: 1.2vw;
+    }
+
+    .container .bottom > div .value{
+        font-size: 3.2vw;
+    }
+
+    .container .bottom > div .value h1 span{
+        font-size: 2.5vw;
+        top: -12px;
+    }
+
+    .container .bottom > div .list ul li{
+        font-size: 1.2vw;
+        padding: 15px 0;
+    }
+
+    .container .bottom > div .btn{
+        margin: 30px auto;
+    }
+
+    .container .bottom > div .btn button{
+        font-size: 1vw;
+        padding: 12px 0;
+        cursor: pointer;
+        border: 1.6px solid;
+    }
+
+    .container .bottom > div .btn button:hover{
+        color:  hsl(237, 63%, 64%);
+        background: hsl(0, 0%, 100%);
+        border: 1.6px solid  hsl(236, 72%, 79%) ;
+    }
+
+    .container .bottom > div:nth-child(2) .btn button{
+        border: 1.6px solid hsl(0, 0%, 100%);
+    }
+
+    .container .bottom > div:nth-child(2) .btn button:hover{
+        background: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%) );
+        color: hsl(0, 0%, 100%);
+        border: 1.6px solid hsl(0, 0%, 100%);
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+    .container{
+        background-size: 25%, 25%;
+        background-position: 1124px 0px, 0 600px;
+    }
+
+    .container .top{
+        padding: 80px 50px;
+    }   
+
+    .container .top .main-heading h1{
+        font-size: 2vw;
+    }
+
+    .container .options span{
+        font-size: 1vw;
+    }
+
+    .container .bottom{
+        padding: 0 150px 150px;
+    }
+
+    .container .bottom > div .title{
+        font-size: 1vw;
+    }
+
+    .container .bottom > div .value{
+        font-size: 2.6vw;
+    }
+
+    .container .bottom > div .list ul li{
+        font-size: 0.9vw;
+        padding: 18px 0;
+    }
+
+    .container .bottom > div .btn{
+        margin: 35px auto;
+    }
+
+    .container .bottom > div .btn button{
+        font-size: 0.8vw;
+    }
+}
+
+@media only screen and (min-width:1536px) {
+
+    .container{
+        background-size: 24%, 25%;
+        background-position: 1168px 0px, 0 600px;
+    }
+
+    .container .bottom{
+        padding: 0 200px 150px;
+    }
+}
